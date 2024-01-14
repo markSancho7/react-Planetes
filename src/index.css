@@ -1,3 +1,5 @@
 body {
-	font-family: sans-serif;
+	font-family: 'Antonio', sans-serif;
+	background-image: url(../public/planets-data/assets/background-stars.svg);
+	background-color: #070724;
 }
