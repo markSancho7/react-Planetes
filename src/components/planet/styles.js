@@ -23,6 +23,7 @@ const StyledContainerImg2 = styled.img`
 `;
 const StyledContainerDescription = styled.div`
 	width: 20%;
+	margin-right: 260px;
 `;
 const StyledTitle = styled.h1`
 	color: #fff;
@@ -49,9 +50,11 @@ const StyledContainerButtons = styled.div`
 	gap: 10px;
 `;
 const StyledButton = styled.button`
+	text-align: left;
 	box-sizing: border-box;
 	padding-top: 25px;
 	padding-bottom: 45px;
+	padding-left: 20px;
 	background: ${({ $activeBackground, $takeIndex }) =>
 		$activeBackground ? PlanetInformation[$takeIndex].colorBack : 'none'};
 	width: 350px;
@@ -67,6 +70,11 @@ const StyledButton = styled.button`
 	text-transform: uppercase;
 	border: 1px solid white;
 `;
+const StyledA = styled.a`
+	font-size: 15px;
+	color: white;
+	text-decoration: none;
+`;
 
 export {
 	StyledPlanet,
@@ -76,5 +84,6 @@ export {
 	StyledContainerDescription,
 	StyledTitle,
 	StyledContainerButtons,
-	StyledButton
+	StyledButton,
+	StyledA
 };

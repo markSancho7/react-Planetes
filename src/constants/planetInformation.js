@@ -75,7 +75,7 @@ export const PlanetInformation = [
 		planetRadius: '3,389.5 km',
 		planetAverage: '-28°c',
 		tabs: ['01 OVERVIEW', '02 INTERNAL STRUCTURE', '03 SURFACE GEOLOGY'],
-		colorBack: '##D14C32'
+		colorBack: '#D14C32'
 	},
 	{
 		id: v4(),

@@ -1,19 +1,19 @@
 import { Link } from 'react-router-dom';
 import { PlanetInformation } from '../../constants/planetInformation';
-import { StyledMenu } from './styles';
+import { StyledMenuLi, StyledMenuUl } from './styles';
 
 const Menu = ({ action }) => {
 	return (
-		<nav>
-			<StyledMenu>
+		<nav className='link-style'>
+			<StyledMenuUl>
 				{PlanetInformation.map((planet, index) => (
-					<li key={planet.id}>
+					<StyledMenuLi key={planet.id}>
 						<Link to={planet.planetRoute} onClick={() => action(index)}>
 							{planet.planetName}
 						</Link>
-					</li>
+					</StyledMenuLi>
 				))}
-			</StyledMenu>
+			</StyledMenuUl>
 		</nav>
 	);
 };

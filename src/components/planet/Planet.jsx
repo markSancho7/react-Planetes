@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { PlanetInformation } from '../../constants/planetInformation';
 import {
+	StyledA,
 	StyledButton,
 	StyledContainerButtons,
 	StyledContainerDescription,
@@ -31,6 +32,9 @@ const Planet = ({
 			<StyledContainerDescription>
 				<StyledTitle>{namePlanet}</StyledTitle>
 				<StyledDescription>{descriptionPlanet}</StyledDescription>
+				<StyledDescription>
+					<StyledA href='https://www.wikipedia.com'>Souerce: wikipedia</StyledA>
+				</StyledDescription>
 				<StyledContainerButtons>
 					{PlanetInformation[index].tabs.map((tab, index) => (
 						<StyledButton
