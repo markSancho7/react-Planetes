@@ -17,7 +17,8 @@ export const PlanetInformation = [
 		planetRevolution: '87.97 days',
 		planetRadius: '2,439.7 km',
 		planetAverage: '430°c',
-		tabs: ['01 OVERVIEW', '02 INTERNAL STRUCTURE', '03 SURFACE GEOLOGY']
+		tabs: ['01 OVERVIEW', '02 INTERNAL STRUCTURE', '03 SURFACE GEOLOGY'],
+		colorBack: '#419EBB'
 	},
 	{
 		id: v4(),
@@ -35,7 +36,8 @@ export const PlanetInformation = [
 		planetRevolution: '224.7 days',
 		planetRadius: '6,051.8 km',
 		planetAverage: '471°c',
-		tabs: ['01 OVERVIEW', '02 INTERNAL STRUCTURE', '03 SURFACE GEOLOGY']
+		tabs: ['01 OVERVIEW', '02 INTERNAL STRUCTURE', '03 SURFACE GEOLOGY'],
+		colorBack: '#EDA249'
 	},
 	{
 		id: v4(),
@@ -53,7 +55,8 @@ export const PlanetInformation = [
 		planetRevolution: '365.26 days',
 		planetRadius: '6,371 km',
 		planetAverage: '16°c',
-		tabs: ['01 OVERVIEW', '02 INTERNAL STRUCTURE', '03 SURFACE GEOLOGY']
+		tabs: ['01 OVERVIEW', '02 INTERNAL STRUCTURE', '03 SURFACE GEOLOGY'],
+		colorBack: '#6D2ED5'
 	},
 	{
 		id: v4(),
@@ -71,7 +74,8 @@ export const PlanetInformation = [
 		planetRevolution: '1.88 years',
 		planetRadius: '3,389.5 km',
 		planetAverage: '-28°c',
-		tabs: ['01 OVERVIEW', '02 INTERNAL STRUCTURE', '03 SURFACE GEOLOGY']
+		tabs: ['01 OVERVIEW', '02 INTERNAL STRUCTURE', '03 SURFACE GEOLOGY'],
+		colorBack: '##D14C32'
 	},
 	{
 		id: v4(),
@@ -89,7 +93,8 @@ export const PlanetInformation = [
 		planetRevolution: '11.86 years',
 		planetRadius: '69,911 km',
 		planetAverage: '-108°c',
-		tabs: ['01 OVERVIEW', '02 INTERNAL STRUCTURE', '03 SURFACE GEOLOGY']
+		tabs: ['01 OVERVIEW', '02 INTERNAL STRUCTURE', '03 SURFACE GEOLOGY'],
+		colorBack: '#D83A34'
 	},
 	{
 		id: v4(),
@@ -107,7 +112,8 @@ export const PlanetInformation = [
 		planetRevolution: '29.46 years',
 		planetRadius: '58,232 km',
 		planetAverage: '-138°c',
-		tabs: ['01 OVERVIEW', '02 INTERNAL STRUCTURE', '03 SURFACE GEOLOGY']
+		tabs: ['01 OVERVIEW', '02 INTERNAL STRUCTURE', '03 SURFACE GEOLOGY'],
+		colorBack: '#CD5120'
 	},
 	{
 		id: v4(),
@@ -125,7 +131,8 @@ export const PlanetInformation = [
 		planetRevolution: '84 years',
 		planetRadius: '25,362 km',
 		planetAverage: '-195°c',
-		tabs: ['01 OVERVIEW', '02 INTERNAL STRUCTURE', '03 SURFACE GEOLOGY']
+		tabs: ['01 OVERVIEW', '02 INTERNAL STRUCTURE', '03 SURFACE GEOLOGY'],
+		colorBack: '#1EC1A2'
 	},
 	{
 		id: v4(),
@@ -143,6 +150,7 @@ export const PlanetInformation = [
 		planetRevolution: '164.79 years',
 		planetRadius: '24,622 km',
 		planetAverage: '-201°c',
-		tabs: ['01 OVERVIEW', '02 INTERNAL STRUCTURE', '03 SURFACE GEOLOGY']
+		tabs: ['01 OVERVIEW', '02 INTERNAL STRUCTURE', '03 SURFACE GEOLOGY'],
+		colorBack: '#2D68F0'
 	}
 ];

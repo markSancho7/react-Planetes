@@ -24,6 +24,7 @@ const Router = ({ sendIndex }) => {
 								}
 								index={sendIndex}
 								getIndex={index => changeImg(setNumberImg, index)}
+								takeIndex={sendIndex}
 							/>
 							<PlanetFooterContainer
 								rotation={PlanetInformation[sendIndex].planetRotation}
@@ -40,5 +41,6 @@ const Router = ({ sendIndex }) => {
 };
 const changeImg = (setNmberImg, index) => {
 	setNmberImg(index);
+	console.log(index);
 };
 export default Router;

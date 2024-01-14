@@ -17,9 +17,11 @@ const Planet = ({
 	descriptionPlanet,
 	index,
 	getIndex,
-	linkImg2
+	linkImg2,
+	takeIndex
 }) => {
-	const [sowImg, setSowImg] = useState(false);
+	const [sowImg, setSowImg] = useState(true);
+	const [printBack, setPrintBack] = useState(0);
 	return (
 		<StyledPlanet>
 			<StyledContainerImg>
@@ -35,8 +37,10 @@ const Planet = ({
 							key={tab.id}
 							onClick={() => {
 								getIndex(index);
-								sowIndex(index, sowImg, setSowImg);
+								sowIndex(index, setSowImg, setPrintBack);
 							}}
+							$activeBackground={printBack === index}
+							$takeIndex={takeIndex}
 						>
 							{tab}
 						</StyledButton>
@@ -46,8 +50,8 @@ const Planet = ({
 		</StyledPlanet>
 	);
 };
-const sowIndex = (index, sowImg, setSowImg) => {
-	console.log(index);
+const sowIndex = (index, setSowImg, setPrintBack) => {
+	setPrintBack(index);
 	if (index === 2) {
 		setSowImg(false);
 	} else {

@@ -1,4 +1,5 @@
 import { styled } from 'styled-components';
+import { PlanetInformation } from '../../constants/planetInformation';
 
 const StyledPlanet = styled.div`
 	position: relative;
@@ -51,7 +52,8 @@ const StyledButton = styled.button`
 	box-sizing: border-box;
 	padding-top: 25px;
 	padding-bottom: 45px;
-	background: none;
+	background: ${({ $activeBackground, $takeIndex }) =>
+		$activeBackground ? PlanetInformation[$takeIndex].colorBack : 'none'};
 	width: 350px;
 	height: 48px;
 	flex-shrink: 0;
