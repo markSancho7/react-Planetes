@@ -2,9 +2,9 @@ import { styled } from 'styled-components';
 
 const StyledFooter = styled.div`
 	margin-top: 250px;
-	gap: 50px;
+	gap: 100px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	margin-left: 20px;
 	margin-right: 20px;
 `;

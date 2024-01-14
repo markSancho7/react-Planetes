@@ -1,18 +1,27 @@
 import { styled } from 'styled-components';
 
 const StyledPlanet = styled.div`
+	position: relative;
 	margin-top: 100px;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 `;
 const StyledContainerImg = styled.div`
-	width: 60%;
+	width: 80%;
 	height: 600px;
 	text-align: center;
 `;
+const StyledContainerImg2 = styled.img`
+	position: absolute;
+	width: 200px;
+	height: 240px;
+	top: 265px;
+	left: 640px;
+	display: ${({ $active }) => ($active ? 'none' : 'flex')};
+`;
 const StyledContainerDescription = styled.div`
-	width: 40%;
+	width: 20%;
 `;
 const StyledTitle = styled.h1`
 	color: #fff;
@@ -32,11 +41,38 @@ const StyledDescription = styled.p`
 	font-weight: 400;
 	line-height: 25px;
 `;
+const StyledContainerButtons = styled.div`
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+`;
+const StyledButton = styled.button`
+	box-sizing: border-box;
+	padding-top: 25px;
+	padding-bottom: 45px;
+	background: none;
+	width: 350px;
+	height: 48px;
+	flex-shrink: 0;
+	color: #fff;
+	font-family: 'League Spartan', sans-serif;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 25px; /* 208.333% */
+	letter-spacing: 2.571px;
+	text-transform: uppercase;
+	border: 1px solid white;
+`;
 
 export {
 	StyledPlanet,
 	StyledDescription,
 	StyledContainerImg,
+	StyledContainerImg2,
 	StyledContainerDescription,
-	StyledTitle
+	StyledTitle,
+	StyledContainerButtons,
+	StyledButton
 };

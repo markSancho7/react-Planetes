@@ -4,13 +4,14 @@ import { StyledContainerTabs, StyledTabs } from './styles';
 
 const TabsContainer = ({ index, take }) => {
 	const [infoTab, setInfoTab] = useState(0);
+
 	return (
 		<StyledContainerTabs>
 			{PlanetInformation[index].tabs.map((tab, index) => (
 				<StyledTabs
 					key={tab.id}
 					onClick={() => {
-						changeImgAndText(index, setInfoTab);
+						changeImgAndText(index, setInfoTab, infoTab);
 						take(() => infoTab);
 					}}
 				>
@@ -21,8 +22,9 @@ const TabsContainer = ({ index, take }) => {
 	);
 };
 
-const changeImgAndText = (index, setInfoTab) => {
+const changeImgAndText = (index, setInfoTab, infoTab) => {
 	setInfoTab(index);
+	console.log(infoTab);
 };
 
 export default TabsContainer;

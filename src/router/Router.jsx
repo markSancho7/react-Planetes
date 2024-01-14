@@ -2,11 +2,11 @@ import { Route, Routes } from 'react-router-dom';
 import Planet from '../components/planet/Planet';
 import { PlanetInformation } from '../constants/planetInformation';
 import PlanetFooterContainer from '../components/planetFooterContainer/PlanetFooterContainer';
-import TabsContainer from '../components/tabsContainer/TabsContainer';
+// import TabsContainer from '../components/tabsContainer/TabsContainer';
 import { useState } from 'react';
 
 const Router = ({ sendIndex }) => {
-	const [newIndex, setNewIndex] = useState(0);
+	const [numberImg, setNumberImg] = useState(0);
 	return (
 		<>
 			<Routes>
@@ -17,14 +17,13 @@ const Router = ({ sendIndex }) => {
 							<Planet
 								id={PlanetInformation[sendIndex].id}
 								namePlanet={PlanetInformation[sendIndex].planetName}
-								linkImg={PlanetInformation[sendIndex].planetImg}
+								linkImg={PlanetInformation[sendIndex].planetImg[numberImg]}
+								linkImg2={PlanetInformation[sendIndex].planetImg[3]}
 								descriptionPlanet={
 									PlanetInformation[sendIndex].planetDescription
 								}
-							/>
-							<TabsContainer
 								index={sendIndex}
-								take={value => takeIndex(newIndex, setNewIndex, value)}
+								getIndex={index => changeImg(setNumberImg, index)}
 							/>
 							<PlanetFooterContainer
 								rotation={PlanetInformation[sendIndex].planetRotation}
@@ -39,8 +38,7 @@ const Router = ({ sendIndex }) => {
 		</>
 	);
 };
-const takeIndex = (newIndex, setNewIndex, value) => {
-	setNewIndex(value);
-	console.log(newIndex);
+const changeImg = (setNmberImg, index) => {
+	setNmberImg(index);
 };
 export default Router;
