@@ -14,10 +14,11 @@ const StyledContainerImg = styled.div`
 	text-align: center;
 `;
 const StyledContainerImg2 = styled.img`
-	position: absolute;
+	margin-inline: auto;
 	width: 200px;
 	height: 240px;
-	top: 265px;
+	margin-top: -100px;
+	top: 200px;
 	left: 640px;
 	display: ${({ $active }) => ($active ? 'none' : 'flex')};
 `;
