@@ -7,26 +7,58 @@ const StyledPlanet = styled.div`
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+	height: 500px;
+	@media (max-width: 1250px) {
+		flex-direction: column;
+	}
 `;
 const StyledContainerImg = styled.div`
-	width: 80%;
+	display: flex;
+	margin-left: auto;
+	margin-right: 400px;
+	width: 600px;
 	height: 600px;
 	text-align: center;
+	@media (max-width: 1600px) {
+		margin-right: 100px;
+	}
+	@media (max-width: 1250px) {
+		position: absolute;
+		background-color: green;
+		margin-top: 100px;
+		width: 100%;
+	}
+`;
+const StyledImg = styled.img`
+	height: 100%;
+	@media (max-width: 1250px) {
+		background-color: red;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+	}
 `;
 const StyledContainerImg2 = styled.img`
-	margin-inline: auto;
+	position: absolute;
 	width: 200px;
 	height: 240px;
-	margin-top: -100px;
-	top: 200px;
-	left: 640px;
+	margin-top: 300px;
+	margin-left: 200px;
 	display: ${({ $active }) => ($active ? 'none' : 'flex')};
+	@media (max-width: 1250px) {
+		position: absolute;
+		background-color: red;
+		height: 230px;
+		left: 50%;
+		z-index: 1;
+	}
 `;
 const StyledContainerDescription = styled.div`
 	width: 20%;
 	margin-right: 260px;
 `;
 const StyledTitle = styled.h1`
+	margin-top: 0;
 	color: #fff;
 	font-family: Antonio;
 	font-size: 80px;
@@ -86,5 +118,6 @@ export {
 	StyledTitle,
 	StyledContainerButtons,
 	StyledButton,
-	StyledA
+	StyledA,
+	StyledImg
 };

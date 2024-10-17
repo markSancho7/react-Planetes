@@ -8,6 +8,7 @@ import {
 	StyledContainerImg,
 	StyledContainerImg2,
 	StyledDescription,
+	StyledImg,
 	StyledPlanet,
 	StyledTitle
 } from './styles';
@@ -26,8 +27,8 @@ const Planet = ({
 	return (
 		<StyledPlanet>
 			<StyledContainerImg>
-				<img src={linkImg} alt='' />
 				<StyledContainerImg2 src={linkImg2} alt='' $active={sowImg} />
+				<StyledImg src={linkImg} alt='' />
 			</StyledContainerImg>
 			<StyledContainerDescription>
 				<StyledTitle>{namePlanet}</StyledTitle>
