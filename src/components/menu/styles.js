@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { styled } from 'styled-components';
 
 const StyledNav = styled.nav`
@@ -15,9 +16,13 @@ const StyledMenuUl = styled.ul`
 	text-decoration: none;
 	font-size: 25px;
 `;
-const StyledMenuLi = styled.li`
-	:visited {
-		color: white;
+const StyledMenuLi = styled(Link)`
+	text-decoration: none;
+	color: white;
+	border: 3px solid white;
+	padding: 10px;
+	&&:hover {
+		border: 3px solid ${({ $colorBack }) => $colorBack};
 	}
 `;
 
