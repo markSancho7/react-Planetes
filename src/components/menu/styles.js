@@ -19,10 +19,13 @@ const StyledMenuUl = styled.ul`
 const StyledMenuLi = styled(Link)`
 	text-decoration: none;
 	color: white;
-	border: 3px solid white;
+	border: 3px solid
+		${({ $active, $colorBack }) => ($active ? $colorBack : 'white')};
+	color: ${({ $active, $colorBack }) => ($active ? $colorBack : 'white')};
 	padding: 10px;
 	&&:hover {
 		border: 3px solid ${({ $colorBack }) => $colorBack};
+		color: ${({ $colorBack }) => $colorBack};
 	}
 `;
 
